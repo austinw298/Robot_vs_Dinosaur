@@ -1,4 +1,4 @@
-class Raptor:
+class Dinosaur:
     def __init__(self, name, attack_power):
         self.health = 100
         self.name = name

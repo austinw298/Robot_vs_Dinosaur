@@ -1,21 +1,19 @@
-from dinosaur import Raptor
+from dinosaur import Dinosaur
 from robot import Robot
 
-robot = Robot
-dino = Raptor
-
-class battlefield:
+class Battlefield:
     def __init__(self,):
-        pass
+        self.robot = Robot("Jericho")
+        self.raptor = Dinosaur("Blue", 30)
 
     def run_game(self):
-        pass
+        self
     
     def display_welcome(self):
         pass
     
     def battle_phase(self):
-        pass
-    
+        self.robot.attack(self.raptor) 
+        self.raptor.attack(self.robot)
     def display_winner(self):
         pass
